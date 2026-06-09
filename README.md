@@ -2,14 +2,6 @@
 
 
 <p align="center">
-  <img src="assets/cobus-greyling.jpg" alt="Cobus Greyling" />
-  <br>
-  <sub>Personal photo • Brand visuals below</sub>
-</p>
-
-</p>
-
-<p align="center">
   <a href="https://cobusgreyling.github.io/loop-engineering/">
     <img src="https://img.shields.io/badge/✨_Explore_the_Showcase-Design_systems_that_prompt_your_agents-0d1117?style=for-the-badge&labelColor=111a28&color=3ee8c5" alt="Explore the Showcase" />
   </a>
@@ -20,6 +12,17 @@
   <a href="https://github.com/cobusgreyling/loop-engineering/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT"></a>
   <a href="https://cobusgreyling.github.io/loop-engineering/"><img src="https://img.shields.io/badge/GitHub_Pages-live-3ee8c5" alt="Pages"></a>
 </p>
+
+
+<p align="center">
+  <img src="assets/cobus-greyling.jpg" alt="Cobus Greyling" />
+  <br>
+  <sub>Personal photo • Brand visuals below</sub>
+</p>
+
+</p>
+
+
 
 <p align="center">
   <img src="assets/visuals/loop-engineering-social-banner.jpg" alt="Loop Engineering — Design the system that prompts your agents" width="100%" />
