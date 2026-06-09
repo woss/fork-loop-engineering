@@ -10,9 +10,9 @@ Last run: 2026-06-09T10:49:32Z (automated daily-triage workflow)
 
 ## Watch List
 
-- Expand contributor failure stories (dependency sweeper, multi-loop).
+- Expand contributor failure stories (dependency sweeper, multi-loop) beyond the six in `stories/`.
 - Complete Claude Code / Codex starters for all L2 patterns.
-- Run `loop-init` on a fresh project and verify scaffold output.
+- Validate `loop-init` scaffolds on fresh projects across all patterns (including changelog-drafter).
 
 ## Recent Noise (ignored this run)
 

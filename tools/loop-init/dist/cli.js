@@ -10,6 +10,7 @@ const PATTERN_STARTERS = {
     'ci-sweeper': 'ci-sweeper',
     'dependency-sweeper': 'dependency-sweeper',
     'post-merge-cleanup': 'post-merge-cleanup',
+    'changelog-drafter': 'changelog-drafter',
 };
 const TOOL_SUFFIX = {
     grok: '',
@@ -22,6 +23,7 @@ const STATE_FILES = {
     'ci-sweeper': 'ci-sweeper-state.md',
     'dependency-sweeper': 'dependency-sweeper-state.md',
     'post-merge-cleanup': 'post-merge-state.md',
+    'changelog-drafter': 'changelog-drafter-state.md',
 };
 function parseArgs(argv) {
     let pattern = 'daily-triage';
@@ -103,6 +105,11 @@ function firstLoopCommand(pattern, tool) {
             claude: '/loop 1d $post-merge-scan — update post-merge-state.md. Small fixes only.',
             codex: 'Automation daily: post-merge-scan → post-merge-state.md.',
         },
+        'changelog-drafter': {
+            grok: '/loop 1d Run changelog-scan on merges since last tag. Produce categorized draft in RELEASE_NOTES_DRAFT.md using draft-release-notes. Update changelog-drafter-state.md. Human review only.',
+            claude: '/loop 1d $changelog-scan + draft-release-notes — write RELEASE_NOTES_DRAFT.md and update state. Human approves before publish.',
+            codex: 'Automation daily: changelog-scan + draft-release-notes → RELEASE_NOTES_DRAFT.md. Human review.',
+        },
     };
     return cmds[pattern][tool];
 }
@@ -120,6 +127,7 @@ Patterns:
   ci-sweeper
   dependency-sweeper
   post-merge-cleanup
+  changelog-drafter (new low-risk release notes pattern)
 
 Options:
   -p, --pattern   Pattern to scaffold
