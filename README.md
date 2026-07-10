@@ -257,10 +257,15 @@ Addy Osmani:
 | Pick one | Issue |
 |----------|-------|
 | ~10 min | [#120 — Add your project to adopters](https://github.com/cobusgreyling/loop-engineering/issues/120) |
-| ~15 min | [#227 — `loop-sync` subsection in QUICKSTART](https://github.com/cobusgreyling/loop-engineering/issues/227) |
+| ~15 min | [#118 — Daily Triage story](https://github.com/cobusgreyling/loop-engineering/issues/118) · [#119 — PR Babysitter failure story](https://github.com/cobusgreyling/loop-engineering/issues/119) |
+| ~15 min | [#226 — `loop-sync` subsection in QUICKSTART](https://github.com/cobusgreyling/loop-engineering/issues/226) |
+| ~20 min | [#117 — Continue.dev row in primitives matrix](https://github.com/cobusgreyling/loop-engineering/issues/117) |
 | ~30 min | [#147 — Cline appendix](https://github.com/cobusgreyling/loop-engineering/issues/147) · [#220 — Cursor CI Sweeper example](https://github.com/cobusgreyling/loop-engineering/issues/220) |
-| ~45 min | [#225 — Hermes PR Babysitter example](https://github.com/cobusgreyling/loop-engineering/issues/225) |
-| ~1 hr | [#230](https://github.com/cobusgreyling/loop-engineering/issues/230) / [#231](https://github.com/cobusgreyling/loop-engineering/issues/231) — **your story** (worktree week-two, multi-loop failure) |
+| ~30 min | [#221 — Cursor Post-Merge Cleanup](https://github.com/cobusgreyling/loop-engineering/issues/221) · [#224 — Cursor Issue Triage](https://github.com/cobusgreyling/loop-engineering/issues/224) |
+| ~30 min | [#195 — Roo Code appendix](https://github.com/cobusgreyling/loop-engineering/issues/195) · [#196 — GitHub Copilot appendix](https://github.com/cobusgreyling/loop-engineering/issues/196) |
+| ~45 min | [#225 — Hermes PR Babysitter example](https://github.com/cobusgreyling/loop-engineering/issues/225) · [#231 — loop-init validation checklist](https://github.com/cobusgreyling/loop-engineering/issues/231) |
+| ~1 hr | [#229](https://github.com/cobusgreyling/loop-engineering/issues/229) / [#230](https://github.com/cobusgreyling/loop-engineering/issues/230) — **your story** (worktree week-two, multi-loop failure) |
+| ~1 hr | [#173 — Issue Triage week-one story](https://github.com/cobusgreyling/loop-engineering/issues/173) |
 
 Comment **"I'll take this"** on any [`good first issue`](https://github.com/cobusgreyling/loop-engineering/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) for assignment.
 
