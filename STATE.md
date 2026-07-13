@@ -10,7 +10,6 @@ Last run: 2026-07-13T07:07:30Z (automated daily-triage workflow)
 
 ## Watch List
 
-- Expand contributor failure stories (dependency sweeper, multi-loop).
 - Collect a production story for Post-Merge Cleanup.
 - Validate `loop-init` scaffolds on fresh projects across all patterns.
 
