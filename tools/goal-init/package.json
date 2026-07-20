@@ -1,0 +1,21 @@
+{
+  "name": "@cobusgreyling/goal-init",
+  "version": "1.0.0",
+  "description": "Scaffold goal engineering setups",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "goal-init": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/cli.test.mjs",
+    "lint": "echo 'Add lint script'"
+  },
+  "author": "Cobus Greyling",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.4"
+  }
+}
