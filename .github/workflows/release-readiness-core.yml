@@ -1,13 +1,13 @@
-name: Release loop-audit
+name: Release readiness-core
 
 on:
   push:
     tags:
-      - 'loop-audit-v*'
+      - 'readiness-core-v*'
   workflow_dispatch:
     inputs:
       tag:
-        description: 'Tag to publish (e.g. loop-audit-v1.4.2)'
+        description: 'Tag to publish (e.g. readiness-core-v1.0.0)'
         required: true
         type: string
 
@@ -28,7 +28,7 @@ jobs:
           node-version: '22'
           registry-url: 'https://registry.npmjs.org'
           cache: 'npm'
-          cache-dependency-path: tools/loop-audit/package-lock.json
+          cache-dependency-path: tools/readiness-core/package-lock.json
 
       - name: Ensure npm supports trusted publishing (OIDC)
         run: |
@@ -36,24 +36,14 @@ jobs:
           npm install -g sigstore
 
       - name: Install, build, test
-        working-directory: tools/loop-audit
+        working-directory: tools/readiness-core
         run: |
-          # Build monorepo sibling first
-          (cd ../readiness-core && npm ci && npm run build)
           npm ci
           npm run build
           npm test
 
       - name: Publish to npm
-        working-directory: tools/loop-audit
-        run: |
-          # Rewrite to registry version for publish
-          node -e "
-            const fs = require('fs');
-            const p = JSON.parse(fs.readFileSync('package.json', 'utf8'));
-            p.dependencies['@cobusgreyling/readiness-core'] = '^1.0.0';
-            fs.writeFileSync('package.json', JSON.stringify(p, null, 2) + '\n');
-          "
-          npm publish --access public --provenance
+        working-directory: tools/readiness-core
+        run: npm publish --access public --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
